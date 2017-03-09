@@ -1,0 +1,53 @@
+@rem: 75;
+.width (@w) {
+    width: unit(@w/75,rem);
+}
+.height (@h) {
+    height: unit(@h/75,rem);
+}
+.lineHeight (@lh){
+    line-height: unit(@lh/75,rem);
+}
+.flex-box {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.flex-vertical {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+.flex (@f:1){
+    -webkit-box-flex: @f;
+    -moz-box-flex: @f;
+    -webkit-flex: @f;
+    -ms-flex: @f;
+    flex: @f;
+}
+.margin (@t:0, @r:0, @b:0, @l:0) {
+    margin: unit(@t/@rem,rem) unit(@r/@rem,rem) unit(@b/@rem,rem) unit(@l/@rem,rem);
+}
+.padding (@t:0, @r:0, @b:0, @l:0) {
+    padding: unit(@t/@rem,rem) unit(@r/@rem,rem) unit(@b/@rem,rem) unit(@l/@rem,rem);
+}
+.transform (@style) {
+    -webkit-transform: @style;
+    -moz-transform: @style;
+    -ms-transform: @style;
+    -o-transform: @style;
+    transform: @style;
+}
+.backgroundSize (@bs) {
+    -webkit-background-size: @bs;
+    background-size: @bs;
+}
+.radius (@reg:50%) {
+    -webkit-border-radius: @reg;
+    -moz-border-radius: @reg;
+    border-radius: @reg;
+}
